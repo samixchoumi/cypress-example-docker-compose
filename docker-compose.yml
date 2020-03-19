@@ -15,7 +15,7 @@ services:
       - "8080:80"
 
   e2e:
-    image: cypress
+    image: cypress/included:4.2.0
     build: ./e2e
     container_name: cypress
     depends_on:
